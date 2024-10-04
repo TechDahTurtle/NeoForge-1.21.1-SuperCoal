@@ -1,5 +1,7 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "itemGroup.super_coal_items.tab": "Super Coal",
+
+  "item.super_coal.tiny_coal": "Tiny Coal",
+  "item.super_coal.nether_coal": "Nether Coal",
+  "item.super_coal.tiny_nether_coal": "Tiny Nether Coal"
 }
