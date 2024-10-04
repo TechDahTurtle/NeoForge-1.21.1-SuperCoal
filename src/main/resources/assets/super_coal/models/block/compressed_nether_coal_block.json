@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "super_coal:block/compressed_nether_coal_block"
+  }
+}
