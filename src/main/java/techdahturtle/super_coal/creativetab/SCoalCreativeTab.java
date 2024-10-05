@@ -9,6 +9,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import techdahturtle.super_coal.SuperCoal;
+import techdahturtle.super_coal.block.SCoalBlocks;
 import techdahturtle.super_coal.item.SCoalItems;
 
 public class SCoalCreativeTab {
@@ -24,6 +25,10 @@ public class SCoalCreativeTab {
             event.accept(SCoalItems.TINY_COAL.get());
             event.accept(SCoalItems.NETHER_COAL.get());
             event.accept(SCoalItems.TINY_NETHER_COAL.get());
+            event.accept(SCoalBlocks.NetherCoalBlock.get().asItem());
+            event.accept(SCoalBlocks.CompressedNetherCoalBlock.get().asItem());
+            event.accept(SCoalBlocks.CompressedCoalBlock.get().asItem());
+            event.accept(SCoalBlocks.NetherCoalOre.get().asItem());
         }
     }
 

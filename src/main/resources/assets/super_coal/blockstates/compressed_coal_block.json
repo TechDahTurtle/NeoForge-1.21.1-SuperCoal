@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "super_coal:block/compressed_coal_block" }
+  }
+}

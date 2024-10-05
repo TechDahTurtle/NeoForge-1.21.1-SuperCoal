@@ -6,10 +6,10 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.Nullable;
 
-public class BurnableBlockItem extends BlockItem {
+public class BurnableBlock extends BlockItem {
     private final int items;
 
-    public BurnableBlockItem(Block block, Properties properties, int items) {
+    public BurnableBlock(Block block, Properties properties, int items) {
         super(block, properties);
         this.items = items;
     }

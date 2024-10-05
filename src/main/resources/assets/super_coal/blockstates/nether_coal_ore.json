@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "super_coal:block/nether_coal_ore"
+    }
+  }
+}

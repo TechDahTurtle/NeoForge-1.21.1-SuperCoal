@@ -10,6 +10,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import techdahturtle.super_coal.block.SCoalBlocks;
 import techdahturtle.super_coal.creativetab.SCoalCreativeTab;
 import techdahturtle.super_coal.item.SCoalItems;
 
@@ -26,6 +27,8 @@ public class SuperCoal {
         // Register Creative Tab
         SCoalCreativeTab.register(modEventBus);
         modEventBus.addListener(SCoalCreativeTab::registerTabs);
+
+        SCoalBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
     }
