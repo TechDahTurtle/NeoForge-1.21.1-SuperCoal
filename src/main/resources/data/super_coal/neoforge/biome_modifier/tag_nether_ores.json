@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "super_coal:nether_coal_ore"
+  ],
+  "step": "underground_ores"
+}
