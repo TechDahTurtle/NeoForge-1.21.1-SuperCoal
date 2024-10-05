@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "super_coal:block/compressed_coal_block"
-  }
+  "parent": "super_coal:block/compressed_coal_block"
 }
