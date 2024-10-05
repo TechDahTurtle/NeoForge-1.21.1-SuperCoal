@@ -1,11 +1,11 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "supercoal:nether_coal"
+    "tag": "super_coal:nether_coal"
   },
   "result": {
-    "id": "supercoal:nether_coal"
+    "id": "super_coal:nether_coal"
   },
   "experience": 0.1,
-  "cooking_time": 100
+  "cooking_time": 200
 }
