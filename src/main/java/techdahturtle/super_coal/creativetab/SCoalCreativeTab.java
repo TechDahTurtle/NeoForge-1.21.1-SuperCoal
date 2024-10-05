@@ -25,10 +25,10 @@ public class SCoalCreativeTab {
             event.accept(SCoalItems.TINY_COAL.get());
             event.accept(SCoalItems.NETHER_COAL.get());
             event.accept(SCoalItems.TINY_NETHER_COAL.get());
-            event.accept(SCoalBlocks.NetherCoalBlock.get().asItem());
-            event.accept(SCoalBlocks.CompressedNetherCoalBlock.get().asItem());
-            event.accept(SCoalBlocks.CompressedCoalBlock.get().asItem());
-            event.accept(SCoalBlocks.NetherCoalOre.get().asItem());
+            event.accept(SCoalBlocks.NETHER_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.COMPRESSED_NETHER_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.COMPRESSED_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.NETHER_COAL_ORE.get().asItem());
         }
     }
 

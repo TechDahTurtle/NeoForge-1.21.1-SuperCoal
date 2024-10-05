@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import techdahturtle.super_coal.SuperCoal;
+import techdahturtle.super_coal.item.BurnableBlockItem;
 import techdahturtle.super_coal.item.SCoalItems;
 
 import java.util.function.Supplier;
@@ -18,11 +19,21 @@ import java.util.function.Supplier;
 public class SCoalBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SuperCoal.MOD_ID);
 
-public static final DeferredBlock<Block> NetherCoalBlock = registerBlock("nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)));
-public static final DeferredBlock<Block> CompressedNetherCoalBlock = registerBlock("compressed_nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)));
-public static final DeferredBlock<Block> CompressedCoalBlock = registerBlock("compressed_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> COMPRESSED_COAL_BLOCK = registerBurnableBlock("compressed_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 720);
+    public static final DeferredBlock<Block> NETHER_COAL_BLOCK = registerBurnableBlock("nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 160);
+    public static final DeferredBlock<Block> COMPRESSED_NETHER_COAL_BLOCK = registerBurnableBlock("compressed_nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 1440);
 
-public static final DeferredBlock<Block> NetherCoalOre = registerBlock("nether_coal_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> NETHER_COAL_ORE = registerBlock("nether_coal_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    private static <T extends Block> DeferredBlock<T> registerBurnableBlock(String name, Supplier<T> block, int items) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        registerBurnableBlockItem(name, toReturn, items);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBurnableBlockItem(String name, DeferredBlock<T> block, int items) {
+        SCoalItems.ITEMS.register(name, () -> new BurnableBlockItem(block.get(), new Item.Properties(), items));
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
