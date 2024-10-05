@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "super_coal:nether_coal_block"
+        }
+    ],
+    "result": {
+        "id": "super_coal:nether_coal",
+        "count": 9
+    }
+}
