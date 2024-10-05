@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "super_coal:block/nether_coal_ore"
-  }
+  "parent": "super_coal:block/nether_coal_ore"
 }
