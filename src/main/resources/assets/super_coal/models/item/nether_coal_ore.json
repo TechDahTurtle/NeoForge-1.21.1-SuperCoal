@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "super_coal:block/nether_coal_ore"
+  }
+}

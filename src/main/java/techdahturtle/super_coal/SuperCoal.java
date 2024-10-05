@@ -23,12 +23,11 @@ public class SuperCoal {
 
         // Register Items
         SCoalItems.register(modEventBus);
+        SCoalBlocks.register(modEventBus);
 
         // Register Creative Tab
         SCoalCreativeTab.register(modEventBus);
         modEventBus.addListener(SCoalCreativeTab::registerTabs);
-
-        SCoalBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
     }

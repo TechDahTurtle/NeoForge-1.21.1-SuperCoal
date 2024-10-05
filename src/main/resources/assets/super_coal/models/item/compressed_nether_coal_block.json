@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "super_coal:block/compressed_nether_coal_block"
+  }
+}
