@@ -3,10 +3,18 @@
 
   "item.super_coal.tiny_coal": "Tiny Coal",
   "item.super_coal.nether_coal": "Nether Coal",
-  "item.super_coal.tiny_nether_coal": "Tiny Nether Coal",
+  "item.super_coal.nether_tiny_coal": "Tiny Nether Coal",
+  "item.super_coal.stone_rod": "Stone Rod",
+
 
   "block.super_coal.nether_coal_ore": "Nether Coal Ore",
   "block.super_coal.nether_coal_block": "Nether Coal Block",
   "block.super_coal.compressed_nether_coal_block": "Compressed Nether Coal Block",
-  "block.super_coal.compressed_coal_block": "Compressed Coal Block"
+  "block.super_coal.compressed_coal_block": "Compressed Coal Block",
+  "block.super_coal.tiny_torch": "Tiny Torch",
+  "block.super_coal.tiny_stone_torch": "Tiny Stone Torch",
+  "block.super_coal.stone_torch": "Stone Torch",
+  "block.super_coal.tiny_nether_torch": "Tiny Nether Torch",
+  "block.super_coal.nether_torch": "Nether Torch"
+
 }

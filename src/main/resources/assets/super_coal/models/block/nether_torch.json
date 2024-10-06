@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/template_torch",
   "textures": {
-    "torch": "super_coal:block/nether_stone_torch"
+    "torch": "super_coal:block/nether_torch"
   },
   "render_type": "cutout"
 }

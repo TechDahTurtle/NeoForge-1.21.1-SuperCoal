@@ -6,14 +6,14 @@
   ],
   "key": {
     "#": {
-      "item": "super_coal:tiny_coal"
+      "item": "super_coal:nether_tiny_coal"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "super_coal:tiny_torch",
+    "id": "super_coal:tiny_nether_torch",
     "count": 2
   }
 }
