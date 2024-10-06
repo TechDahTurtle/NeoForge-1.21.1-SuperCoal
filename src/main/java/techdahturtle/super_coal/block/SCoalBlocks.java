@@ -14,7 +14,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import techdahturtle.super_coal.SuperCoal;
 import techdahturtle.super_coal.block.torch.AbstractTorchBlock;
+import techdahturtle.super_coal.block.torch.AbstractWallTorchBlock;
 import techdahturtle.super_coal.block.torch.TinyTorchBlock;
+import techdahturtle.super_coal.block.torch.TinyWallTorchBlock;
 import techdahturtle.super_coal.item.SCoalItems;
 
 import java.util.function.Supplier;
@@ -28,11 +30,16 @@ public class SCoalBlocks {
 
     public static final DeferredBlock<Block> NETHER_COAL_ORE = registerBlock("nether_coal_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> TINY_TORCH = registerBlock("tiny_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.WOOD)));
-    public static final DeferredBlock<Block> TINY_STONE_TORCH = registerBlock("tiny_stone_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> TINY_NETHER_TORCH = registerBlock("tiny_nether_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
-    public static final DeferredBlock<Block> STONE_TORCH = registerBlock("stone_torch", () -> new AbstractTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 14).sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> NETHER_TORCH = registerBlock("nether_torch", () -> new AbstractTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+    public static final DeferredBlock<Block> TINY_TORCH = registerBlockWithoutBlockItem("tiny_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> TINY_STONE_TORCH = registerBlockWithoutBlockItem("tiny_stone_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TINY_WALL_STONE_TORCH = registerBlockWithoutBlockItem("tiny_wall_stone_torch", () -> new TinyWallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TINY_NETHER_TORCH = registerBlockWithoutBlockItem("tiny_nether_torch", () -> new TinyTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+    public static final DeferredBlock<Block> TINY_WALL_NETHER_TORCH = registerBlockWithoutBlockItem("tiny_wall_nether_torch", () -> new TinyWallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+    public static final DeferredBlock<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new AbstractTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 14).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new AbstractWallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 14).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> NETHER_TORCH = registerBlockWithoutBlockItem("nether_torch", () -> new AbstractTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+    public static final DeferredBlock<Block> NETHER_WALL_TORCH = registerBlockWithoutBlockItem("nether_wall_torch", () -> new AbstractWallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
 
     private static <T extends Block> DeferredBlock<T> registerFuelBlock(String name, Supplier<T> block, int items) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
@@ -52,6 +59,10 @@ public class SCoalBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         SCoalItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    public static <T extends Block> DeferredBlock<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     public static void register(IEventBus eventBus) {
