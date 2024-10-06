@@ -19,8 +19,8 @@ public class SCoalItems {
     public static final DeferredItem<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.TINY_TORCH.get(), SCoalBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final DeferredItem<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.TINY_STONE_TORCH.get(), SCoalBlocks.TINY_WALL_STONE_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final DeferredItem<Item> TINY_NETHER_TORCH = ITEMS.register("tiny_nether_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.TINY_NETHER_TORCH.get(), SCoalBlocks.TINY_WALL_NETHER_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.TINY_STONE_TORCH.get(), SCoalBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<Item> TINY_NETHER_TORCH = ITEMS.register("tiny_nether_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.TINY_NETHER_TORCH.get(), SCoalBlocks.TINY_NETHER_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final DeferredItem<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.STONE_TORCH.get(), SCoalBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final DeferredItem<Item> NETHER_TORCH = ITEMS.register("nether_torch", () -> new StandingAndWallBlockItem(SCoalBlocks.NETHER_TORCH.get(), SCoalBlocks.NETHER_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
