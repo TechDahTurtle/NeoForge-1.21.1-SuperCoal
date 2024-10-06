@@ -25,6 +25,13 @@ public class SCoalBlocks {
 
     public static final DeferredBlock<Block> NETHER_COAL_ORE = registerBlock("nether_coal_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> TINY_TORCH = registerBlock("tiny_torch", () -> new Block(BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> TINY_STONE_TORCH = registerBlock("tiny_stone_torch", () -> new Block(BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 7).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TINY_NETHER_TORCH = registerBlock("tiny_nether_torch", () -> new Block(BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+    public static final DeferredBlock<Block> STONE_TORCH = registerBlock("stone_torch", () -> new Block(BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 14).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> NETHER_TORCH = registerBlock("nether_torch", () -> new Block(BlockBehaviour.Properties.of().strength(0.0F).noCollission().lightLevel((state) -> 15).sound(SoundType.NETHER_BRICKS)));
+
+
     private static <T extends Block> DeferredBlock<T> registerFuelBlock(String name, Supplier<T> block, int items) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerFuelBlockItem(name, toReturn, items);

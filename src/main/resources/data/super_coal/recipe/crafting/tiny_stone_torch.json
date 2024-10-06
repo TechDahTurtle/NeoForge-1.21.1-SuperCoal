@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "super_coal:tiny_coal"
+    },
+    "/": {
+      "item": "super_coal:stone_rod"
+    }
+  },
+  "result": {
+    "id": "super_coal:tiny_stone_torch",
+    "count": 2
+  }
+}

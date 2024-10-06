@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "torch": "super_coal:block/tiny_stone_torch"
+  },
+  "render_type": "cutout"
+}
