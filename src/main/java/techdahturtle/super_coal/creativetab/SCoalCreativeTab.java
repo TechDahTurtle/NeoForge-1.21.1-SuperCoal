@@ -30,6 +30,7 @@ public class SCoalCreativeTab {
             event.accept(SCoalBlocks.COMPRESSED_COAL_BLOCK.get().asItem());
             event.accept(SCoalBlocks.NETHER_COAL_ORE.get().asItem());
             event.accept(SCoalItems.STONE_ROD.get());
+            event.accept(SCoalItems.NETHER_ROD.get());
             event.accept(SCoalItems.TINY_TORCH.get());
             event.accept(SCoalItems.TINY_STONE_TORCH.get());
             event.accept(SCoalItems.TINY_NETHER_TORCH.get());

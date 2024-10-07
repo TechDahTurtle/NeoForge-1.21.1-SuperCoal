@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:netherrack"
+      },
+      {
+        "item": "minecraft:basalt"
+      }
+    ]
+  },
+  "result": {
+    "id": "super_coal:nether_rod",
+    "count": 4
+  }
+}

@@ -9,11 +9,11 @@
       "item": "super_coal:nether_tiny_coal"
     },
     "/": {
-      "item": "minecraft:stick"
+      "item": "super_coal:nether_rod"
     }
   },
   "result": {
     "id": "super_coal:tiny_nether_torch",
-    "count": 2
+    "count": 8
   }
 }
