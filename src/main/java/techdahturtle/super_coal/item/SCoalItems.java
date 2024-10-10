@@ -13,10 +13,13 @@ import techdahturtle.super_coal.block.SCoalBlocks;
 public class SCoalItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SuperCoal.MOD_ID);
 
-    public static final DeferredItem<Item> NETHER_COAL = ITEMS.register("nether_coal", () -> new FuelItem(new Item.Properties(), 16));
     public static final DeferredItem<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new FuelItem(new Item.Properties(), 1));
     public static final DeferredItem<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal", () -> new FuelItem(new Item.Properties(), 1));
+    public static final DeferredItem<Item> NETHER_COAL = ITEMS.register("nether_coal", () -> new FuelItem(new Item.Properties(), 16));
     public static final DeferredItem<Item> TINY_NETHER_COAL = ITEMS.register("nether_tiny_coal", () -> new FuelItem(new Item.Properties(), 2));
+    public static final DeferredItem<Item> END_COAL = ITEMS.register("end_coal", () -> new FuelItem(new Item.Properties(), 32));
+    public static final DeferredItem<Item> TINY_END_COAL = ITEMS.register("end_tiny_coal", () -> new FuelItem(new Item.Properties(), 4));
+
     public static final DeferredItem<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NETHER_ROD = ITEMS.register("nether_rod", () -> new Item(new Item.Properties()));
 

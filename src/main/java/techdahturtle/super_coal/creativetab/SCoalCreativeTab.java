@@ -23,17 +23,27 @@ public class SCoalCreativeTab {
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == SCOAL_ITEMS_TAB.get()) {
             event.accept(SCoalItems.TINY_COAL.get());
+            event.accept(SCoalItems.TINY_CHARCOAL.get());
             event.accept(SCoalItems.NETHER_COAL.get());
             event.accept(SCoalItems.TINY_NETHER_COAL.get());
-            event.accept(SCoalItems.TINY_CHARCOAL.get());
-            event.accept(SCoalBlocks.NETHER_COAL_BLOCK.get().asItem());
-            event.accept(SCoalBlocks.COMPRESSED_NETHER_COAL_BLOCK.get().asItem());
+            event.accept(SCoalItems.END_COAL.get());
+            event.accept(SCoalItems.TINY_END_COAL.get());
+
+            event.accept(SCoalItems.STONE_ROD.get());
+            event.accept(SCoalItems.NETHER_ROD.get());
+
             event.accept(SCoalBlocks.COMPRESSED_COAL_BLOCK.get().asItem());
             event.accept(SCoalBlocks.CHARCOAL_BLOCK.get().asItem());
             event.accept(SCoalBlocks.COMPRESSED_CHARCOAL_BLOCK.get().asItem());
+
+            event.accept(SCoalBlocks.NETHER_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.COMPRESSED_NETHER_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.END_COAL_BLOCK.get().asItem());
+            event.accept(SCoalBlocks.COMPRESSED_END_COAL_BLOCK.get().asItem());
+
             event.accept(SCoalBlocks.NETHER_COAL_ORE.get().asItem());
-            event.accept(SCoalItems.STONE_ROD.get());
-            event.accept(SCoalItems.NETHER_ROD.get());
+            event.accept(SCoalBlocks.END_COAL_ORE.get().asItem());
+
             event.accept(SCoalItems.TINY_TORCH.get());
             event.accept(SCoalItems.TINY_STONE_TORCH.get());
             event.accept(SCoalItems.TINY_NETHER_TORCH.get());

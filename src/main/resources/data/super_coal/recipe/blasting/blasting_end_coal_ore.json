@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "super_coal:end_coal_ore"
+  },
+  "result": {
+    "id": "super_coal:end_coal"
+  },
+  "experience": 0.1,
+  "cooking_time": 100
+}

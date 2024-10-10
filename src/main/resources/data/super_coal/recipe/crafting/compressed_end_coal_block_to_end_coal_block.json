@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "super_coal:compressed_end_coal_block"
+        }
+    ],
+    "result": {
+        "id": "super_coal:end_coal_block",
+        "count": 9
+    }
+}

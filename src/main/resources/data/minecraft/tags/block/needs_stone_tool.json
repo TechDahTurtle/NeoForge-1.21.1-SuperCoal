@@ -1,8 +1,11 @@
 {
   "values": [
     "super_coal:nether_coal_ore",
+    "super_coal:end_coal_ore",
+    "super_coal:compressed_coal_block",
     "super_coal:nether_coal_block",
     "super_coal:compressed_nether_coal_block",
-    "super_coal:compressed_coal_block"
+    "super_coal:end_coal_block",
+    "super_coal:compressed_end_coal_block"
   ]
 }
