@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "super_coal:charcoal_block"
+        }
+    },
+    "result": {
+        "id": "super_coal:compressed_charcoal_block",
+        "count": 1
+    }
+}

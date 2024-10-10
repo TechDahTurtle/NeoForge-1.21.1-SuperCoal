@@ -6,6 +6,8 @@
   "item.super_coal.nether_tiny_coal": "Tiny Nether Coal",
   "item.super_coal.stone_rod": "Stone Rod",
   "item.super_coal.nether_rod": "Nether Rod",
+  "item.super_coal.tiny_charcoal": "Tiny Charcoal",
+
 
 
   "block.super_coal.nether_coal_ore": "Nether Coal Ore",
@@ -16,6 +18,9 @@
   "block.super_coal.tiny_stone_torch": "Tiny Stone Torch",
   "block.super_coal.stone_torch": "Stone Torch",
   "block.super_coal.tiny_nether_torch": "Tiny Nether Torch",
-  "block.super_coal.nether_torch": "Nether Torch"
+  "block.super_coal.nether_torch": "Nether Torch",
+  "block.super_coal.compressed_charcoal_block": "Compressed Charcoal Block",
+  "block.super_coal.charcoal_block": "Charcoal Block"
+
 
 }

@@ -27,6 +27,8 @@ public class SCoalBlocks {
     public static final DeferredBlock<Block> COMPRESSED_COAL_BLOCK = registerFuelBlock("compressed_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 720);
     public static final DeferredBlock<Block> NETHER_COAL_BLOCK = registerFuelBlock("nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 160);
     public static final DeferredBlock<Block> COMPRESSED_NETHER_COAL_BLOCK = registerFuelBlock("compressed_nether_coal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 1440);
+    public static final DeferredBlock<Block> COMPRESSED_CHARCOAL_BLOCK = registerFuelBlock("compressed_charcoal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 720);
+    public static final DeferredBlock<Block> CHARCOAL_BLOCK = registerFuelBlock("charcoal_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F).sound(SoundType.STONE)), 80);
 
     public static final DeferredBlock<Block> NETHER_COAL_ORE = registerBlock("nether_coal_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

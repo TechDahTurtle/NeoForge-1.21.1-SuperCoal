@@ -4,10 +4,15 @@
     "#",
     "/"
   ],
-  "key": {
-    "#": {
-      "item": "super_coal:tiny_coal"
-    },
+    "key": {
+      "#": [
+        {
+          "item": "super_coal:tiny_charcoal"
+        },
+        {
+          "item": "super_coal:tiny_coal"
+        }
+      ],
     "/": {
       "item": "super_coal:stone_rod"
     }

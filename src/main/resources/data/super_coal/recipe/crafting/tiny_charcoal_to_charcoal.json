@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "super_coal:tiny_charcoal"
+        }
+    },
+    "result": {
+        "id": "minecraft:charcoal",
+        "count": 1
+    }
+}
