@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "super_coal:end_coal"
+        }
+    },
+    "result": {
+        "id": "super_coal:end_coal_block",
+        "count": 1
+    }
+}
