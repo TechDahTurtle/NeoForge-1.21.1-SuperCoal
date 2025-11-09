@@ -1,5 +1,7 @@
 {
-  "itemGroup.super_coal_items.tab": "Super Coal",
+  "itemGroup.super_coal_items.tab": "Super Coal - Items",
+  "itemGroup.super_coal_blocks.tab": "Super Coal - Blocks",
+  "itemGroup.super_coal_torches.tab": "Super Coal - Torches",
 
   "item.super_coal.tiny_coal": "Tiny Coal",
   "item.super_coal.tiny_charcoal": "Tiny Charcoal",
