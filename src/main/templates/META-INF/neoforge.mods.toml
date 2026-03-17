@@ -1,5 +1,4 @@
-modLoader="javafml"
-loaderVersion="${loader_version_range}"
+# License
 license="${mod_license}"
 
 [[mods]]
@@ -7,8 +6,10 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 logoFile="super_coal.png"
-authors="${mod_authors}"
-description='''${mod_description}'''
+authors="TechDahTurtle & Lemon_Juiced"
+description='''
+Super Coal is a small mod that adds different types of coal from Tiny Coal to Compressed Coal to fit you every smelting need. Along with more torches.
+'''
 
 [[dependencies.${mod_id}]]
     modId="neoforge"
@@ -16,15 +17,17 @@ description='''${mod_description}'''
     versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.${mod_id}]]
     modId="scalar_core"
     type="required"
-    versionRange="=[1.21.1-1.0.3,)"
+    versionRange="=[1.21.11-1.1.0,)"
     ordering="NONE"
     side="BOTH"
