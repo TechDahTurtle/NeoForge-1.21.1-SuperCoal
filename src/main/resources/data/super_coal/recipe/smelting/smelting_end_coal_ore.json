@@ -1,11 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "super_coal:end_coal_ore"
-  },
+  "ingredient": "super_coal:end_coal_ore",
+  "experience": 0.7,
+  "cookingtime": 200,
   "result": {
     "id": "super_coal:end_coal"
-  },
-  "experience": 0.1,
-  "cooking_time": 200
+  }
 }

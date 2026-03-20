@@ -1,9 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "item": "super_coal:compressed_charcoal_block"
-        }
+        "super_coal:compressed_charcoal_block"
     ],
     "result": {
         "id": "super_coal:charcoal_block",

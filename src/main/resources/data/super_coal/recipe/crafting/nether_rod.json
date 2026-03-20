@@ -5,14 +5,7 @@
     "#"
   ],
   "key": {
-    "#": [
-      {
-        "item": "minecraft:netherrack"
-      },
-      {
-        "item": "minecraft:basalt"
-      }
-    ]
+    "#": "#super_coal:nether_rod_craftables"
   },
   "result": {
     "id": "super_coal:nether_rod",

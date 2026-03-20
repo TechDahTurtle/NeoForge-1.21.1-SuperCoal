@@ -1,21 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
+    "X",
     "/"
   ],
-    "key": {
-      "#": [
-        {
-          "item": "super_coal:tiny_charcoal"
-        },
-        {
-          "item": "super_coal:tiny_coal"
-        }
-      ],
-    "/": {
-      "item": "super_coal:stone_rod"
-    }
+  "key": {
+    "/": "super_coal:stone_rod",
+    "X": [
+      "super_coal:tiny_coal",
+      "super_coal:tiny_charcoal"
+    ]
   },
   "result": {
     "id": "super_coal:tiny_stone_torch",

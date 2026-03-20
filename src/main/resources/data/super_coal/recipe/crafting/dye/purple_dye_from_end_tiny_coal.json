@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "super_coal:end_tiny_coal"
-    }
+    "super_coal:end_tiny_coal"
   ],
   "result": {
     "id": "minecraft:purple_dye",

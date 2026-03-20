@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "super_coal:tiny_coal"
-    }
+    "super_coal:tiny_coal"
   ],
   "result": {
     "id": "minecraft:black_dye",

@@ -6,9 +6,7 @@
         "###"
     ],
     "key": {
-        "#": {
-            "item": "super_coal:nether_coal"
-        }
+        "#": "super_coal:nether_coal"
     },
     "result": {
         "id": "super_coal:nether_coal_block",

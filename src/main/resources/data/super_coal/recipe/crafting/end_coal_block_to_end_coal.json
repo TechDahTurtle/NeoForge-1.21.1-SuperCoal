@@ -1,9 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "item": "super_coal:end_coal_block"
-        }
+        "super_coal:end_coal_block"
     ],
     "result": {
         "id": "super_coal:end_coal",

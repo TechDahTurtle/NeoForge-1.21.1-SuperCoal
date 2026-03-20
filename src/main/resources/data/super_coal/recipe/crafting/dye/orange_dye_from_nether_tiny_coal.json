@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "super_coal:nether_tiny_coal"
-    }
+    "super_coal:nether_tiny_coal"
   ],
   "result": {
     "id": "minecraft:orange_dye",
