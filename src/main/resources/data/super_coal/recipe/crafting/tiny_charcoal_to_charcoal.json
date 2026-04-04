@@ -1,14 +1,14 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal",
-        "super_charcoal:tiny_charcoal"
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal",
+        "super_coal:tiny_charcoal"
     ],
     "result": {
         "id": "minecraft:charcoal",

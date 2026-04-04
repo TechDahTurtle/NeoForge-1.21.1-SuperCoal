@@ -1,17 +1,17 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal",
-        "super_charcoal:nether_tiny_coal"
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal",
+        "super_coal:nether_tiny_coal"
     ],
     "result": {
-        "id": "super_charcoal:nether_coal",
+        "id": "super_coal:nether_coal",
         "count": 1
     }
 }

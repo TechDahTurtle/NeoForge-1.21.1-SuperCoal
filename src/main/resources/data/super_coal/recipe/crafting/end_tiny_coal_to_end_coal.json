@@ -1,17 +1,17 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal",
-        "super_charcoal:end_tiny_coal"
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal",
+        "super_coal:end_tiny_coal"
     ],
     "result": {
-        "id": "super_charcoal:end_coal",
+        "id": "super_coal:end_coal",
         "count": 1
     }
 }
